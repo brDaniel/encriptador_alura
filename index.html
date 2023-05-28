@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./images/Logo.png" alt="logo alura" />
+    </header>
+    <main class="container">
+      <section>
+        <!-- <label for="Texto"><h2></h2></label> -->
+        <textarea
+          name="Texto"
+          id="Texto"
+          cols="30"
+          rows="5"
+          placeholder="Ingrese el texto aqui"
+          pattern="[a-z]"
+        ></textarea>
+        <p>
+          <img src="./images/bi_exclamation-circle-fill.png" alt="" />
+          Solo letras minusculas y sin acentos
+        </p>
+        <input
+          class="button button_blue"
+          type="submit"
+          value="Encriptar"
+          id="encriptar"
+        />
+        <input
+          class="button button_gray"
+          type="submit"
+          value="Desencriptar"
+          id="desencriptar"
+        />
+      </section>
+
+      <section class="output">
+        <p id="output_text"></p>
+        <div id="noText">
+          <img src="images/Muñeco.png" alt="Muñeco" style="display: none" />
+          <p><strong>Ningun mensaje fue encotrado</strong></p>
+          <p>ingrese el texto que desees encrptar o desencriptar</p>
+        </div>
+
+        <input
+          class="button button_white"
+          type="submit"
+          value="Copiar"
+          id="copiar"
+        />
+      </section>
+    </main>
+    <footer>
+      <div class="row">
+        <p class="col">Daniel Bautista R.</p>
+        <nav class="col">
+          <ul>
+            <li>
+              <a href="https://github.com/brDaniel">Github</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/daniel-bautista-ruiz-ug/"
+                >Linkedin</a
+              >
+            </li>
+            <li>
+              <a href="#">Alura</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
